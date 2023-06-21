@@ -1,0 +1,24 @@
+name: screentasia
+description: A Flutter package that helps you create beautifully adaptive designs for all screens with a wealth of features.
+version: 0.0.1
+homepage: https://github.com/FaisalFaraj/screentasia
+
+# This package supports all platforms listed below.
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+  
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
