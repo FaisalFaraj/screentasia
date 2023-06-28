@@ -15,12 +15,22 @@ class RebuildFactors {
   }
 }
 
+class CustomScreen {
+  const CustomScreen(this.width, this.height);
+  final double width;
+  final double height;
+}
+
 class AdaptiveFrom {
   const AdaptiveFrom._();
 
-  static const double mobile = 400;
-  static const double tablet = 768;
-  static const double desktop = 1280;
+  static CustomScreen customScreen(double width, double height) {
+    return CustomScreen(width, height);
+  }
+
+  static const CustomScreen mobile = CustomScreen(400, 760);
+  static const CustomScreen tablet = CustomScreen(768, 1060);
+  static const CustomScreen desktop = CustomScreen(1280, 621);
 }
 
 class AdaptivePercentage {
@@ -32,10 +42,9 @@ class AdaptivePercentage {
   final double desktop;
 
   double deviceAdaptivePercentage(double screenWidth) {
-    if (screenWidth < AdaptiveFrom.tablet) {
+    if (screenWidth <= 500) {
       return (mobile / 100);
-    } else if (screenWidth >= AdaptiveFrom.tablet &&
-        screenWidth < AdaptiveFrom.desktop) {
+    } else if (screenWidth < 1024 && screenWidth > 500) {
       return (tablet / 100);
     } else {
       return (desktop / 100);
@@ -59,7 +68,7 @@ class ScreentasiaInit extends StatefulWidget {
   final Widget? child;
   final bool useInheritedMediaQuery;
   final RebuildFactor rebuildFactor;
-  final double adaptiveFrom;
+  final CustomScreen adaptiveFrom;
   final AdaptivePercentage adaptivePercentage;
 
   @override

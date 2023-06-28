@@ -11,17 +11,7 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        width: deviceSize.width,
-        height: deviceSize.height,
-        child: FittedBox(
-          fit: BoxFit.none,
-          alignment: Alignment.center,
-          child: Container(
-            width: deviceSize.width,
-            height: deviceSize.height,
-            child: child,
-          ),
-        ));
+    return SizedBox(
+        width: deviceSize.width, height: deviceSize.height, child: child);
   }
 }

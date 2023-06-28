@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="images/logo.jpg" width="350px">
+  <img src="https://github.com/FaisalFaraj/screentasia/blob/main/images/logo.jpg?raw=true" width="350px">
 </p>
 <h2 align="center"> Level Up Your UI, Enjoyable & Simple</h2>
 
@@ -57,7 +57,7 @@ import 'package:screentasia/screentasia.dart';
 
 | Property        | Type         | Default Value | Description                                                                 |
 | --------------- | ------------ | ------------- | --------------------------------------------------------------------------- |
-| adaptiveFrom         | double     | AdaptiveFrom.mobile          | Used to adapt sizes from chosen screen ex: if 500 width on a desktop is equal to 50% of the screen width, will be equal to 50% to all screens  |
+| adaptiveFrom         | double     | AdaptiveFrom.mobile          | Used to adapt sizes from chosen screen ex: if 500 width on a desktop is equal to 50% of the screen width, will be equal to 50% to all screens,also you can use custom screen with customScreen method|
 | adaptivePercentage         | AdaptivePercentage     | AdaptivePercentage(mobile: 100, tablet: 100, desktop: 100)          | For adaptive percentage in different screens, also can disable adaptive for specific screens with 0 value as parameter  |
 | builder         | Function     | null          | Return widget that uses the library in a property (ex: MaterialApp's theme) |
 | child           | Widget       | null          | A part of the builder that its dependencies/properties don't use the library    |
@@ -88,7 +88,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
    
     return ScreentasiaInit(
-      adaptiveFrom: AdaptiveFrom.mobile, //optional
+      adaptiveFrom: AdaptiveFrom.mobile, //optional for custom screen ex: customScreen(400,700)
       adaptivePercentage: AdaptivePercentage(mobile:100,tablet:100,desktop:100),//optional
       builder: (context , child) {
         return MaterialApp(

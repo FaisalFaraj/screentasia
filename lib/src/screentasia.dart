@@ -12,27 +12,40 @@ class Screentasia {
   BuildContext? _context;
   late double _screenWidth;
   late double _screenHeight;
-  late double _adaptiveFrom;
+  late double _adaptiveFromWidth;
+  late double _adaptiveFromHeight;
+
   late double _deviceAdaptivePercentage;
+
+  double? _lastScreenHeight;
 
   double get screenWidth => _screenWidth;
 
   double get screenHeight => _screenHeight;
 
+  double get lastScreenHeight =>
+      _lastScreenHeight == null ? screenHeight : _lastScreenHeight!;
+
   double fullAdaptivePercentageValue(num value) {
     return value * 1 / _deviceAdaptivePercentage;
   }
 
-  double get adaptiveFrom1PixelScale => (1 * 100) / _adaptiveFrom;
+  double get adaptiveFromHeight1PixelScale => (1 * 100) / _adaptiveFromHeight;
+
+  double get adaptiveFromWidth1PixelScale => (1 * 100) / _adaptiveFromWidth;
 
   double get currentScreen1PixelScaleWidth =>
-      (adaptiveFrom1PixelScale * screenWidth) / 100;
+      (adaptiveFromWidth1PixelScale * screenWidth) / 100;
 
-  double get currentScreen1PixelScaleHeight =>
-      ((adaptiveFrom1PixelScale * screenHeight) / 100) *
-      differencePercentValueWFromH;
+  double get currentScreen1PixelScaleHeight {
+    if (lastScreenHeight != screenHeight) {
+      return (adaptiveFromHeight1PixelScale * screenHeight) / 100;
+    }
 
-  double get differencePercentValueWFromH => screenWidth / screenHeight;
+    _lastScreenHeight = screenHeight;
+
+    return 1;
+  }
 
   double get finalWidthAdaptiveValue => _deviceAdaptivePercentage != 0
       ? currentScreen1PixelScaleWidth * _deviceAdaptivePercentage
@@ -45,7 +58,7 @@ class Screentasia {
   /// Initializing the Screentasia
   static Future<void> init(
     BuildContext context,
-    double adaptiveFrom,
+    CustomScreen adaptiveFrom,
     AdaptivePercentage adaptivePercentage,
   ) async {
     final navigatorContext = Navigator.maybeOf(context)?.context as Element?;
@@ -67,7 +80,8 @@ class Screentasia {
       .._screenWidth = deviceSize!.width
       .._screenHeight = deviceSize.height
       .._context = context
-      .._adaptiveFrom = adaptiveFrom
+      .._adaptiveFromHeight = adaptiveFrom.height
+      .._adaptiveFromWidth = adaptiveFrom.width
       .._deviceAdaptivePercentage =
           adaptivePercentage.deviceAdaptivePercentage(deviceSize.width);
 
