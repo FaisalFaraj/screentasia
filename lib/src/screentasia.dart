@@ -73,9 +73,9 @@ class Screentasia {
       if (_instance._context != null) initCompleter.complete();
     });
 
-    final deviceData = MediaQuery.maybeOf(context).nonEmptySizeOrNull();
+    final deviceData = MediaQuery.sizeOf(context).nonEmptySizeOrNull();
 
-    final deviceSize = deviceData?.size;
+    final deviceSize = deviceData;
 
     _instance
       .._screenWidth = deviceSize!.width
@@ -119,9 +119,9 @@ class Screentasia {
   }
 }
 
-extension on MediaQueryData? {
-  MediaQueryData? nonEmptySizeOrNull() {
-    if (this?.size.isEmpty ?? true) {
+extension on Size? {
+  Size? nonEmptySizeOrNull() {
+    if (this?.isEmpty ?? true) {
       return null;
     } else {
       return this;

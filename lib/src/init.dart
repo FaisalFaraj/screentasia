@@ -97,7 +97,8 @@ class ScreentasiaInitState extends State<ScreentasiaInit>
       }
     }
 
-    return MediaQueryData.fromView(binding.window);
+    return MediaQueryData.fromView(
+        WidgetsBinding.instance.platformDispatcher.views.single);
   }
 
   Widget get child {
@@ -148,8 +149,7 @@ class ScreentasiaInitState extends State<ScreentasiaInit>
         data: mediaQueryData,
         child: Builder(
           builder: (__context) {
-            final deviceData = MediaQuery.maybeOf(__context);
-            final deviceSize = deviceData!.size;
+            final deviceSize = MediaQuery.sizeOf(context);
 
             Screentasia.init(
                 __context, widget.adaptiveFrom, widget.adaptivePercentage);
@@ -161,9 +161,7 @@ class ScreentasiaInitState extends State<ScreentasiaInit>
 
     Screentasia.init(_context, widget.adaptiveFrom, widget.adaptivePercentage);
 
-    final deviceData = MediaQuery.maybeOf(_context);
-
-    final deviceSize = deviceData!.size;
+    final deviceSize = MediaQuery.sizeOf(context);
     return AppWidget(deviceSize: deviceSize, child: child);
   }
 }

@@ -131,10 +131,10 @@
       "name": "screentasia",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-11-21T23:00:52.009137Z",
+  "generated": "2023-11-21T23:09:03.298195Z",
   "generator": "pub",
   "generatorVersion": "3.2.0"
 }
