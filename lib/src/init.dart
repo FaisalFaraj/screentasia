@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import '../screentasia.dart';
 
 typedef RebuildFactor = bool Function(MediaQueryData old, MediaQueryData data);
@@ -95,7 +97,7 @@ class ScreentasiaInitState extends State<ScreentasiaInit>
       }
     }
 
-    return MediaQueryData.fromWindow(binding.window);
+    return MediaQueryData.fromView(binding.window);
   }
 
   Widget get child {
