@@ -1,4 +1,5 @@
 import '../screentasia.dart';
+import 'package:flutter/material.dart';
 
 class Screentasia {
   static final Screentasia _instance = Screentasia._();
