@@ -1,7 +1,10 @@
+# 1.2.0
+
+- update media query
+
 # 1.1.1
 
 - update README
-
 
 
 # 1.1.0
