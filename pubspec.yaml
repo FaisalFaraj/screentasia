@@ -5,7 +5,7 @@ homepage: https://github.com/FaisalFaraj/screentasia
 repository: https://github.com/FaisalFaraj/screentasia
 screenshots:
   - description: screentasia logo.
-    path: https://t9009185363.p.clickup-attachments.com/t9009185363/9185ba2a-001e-4a32-b55d-21ed0d4f64e7/logo.jpg
+    path: images/logo.jpg
 
 
 # This package supports all platforms listed below.

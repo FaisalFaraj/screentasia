@@ -1,7 +1,7 @@
 # Screentasia
 
 <p align="center">
-  <img src="https://t9009185363.p.clickup-attachments.com/t9009185363/9185ba2a-001e-4a32-b55d-21ed0d4f64e7/logo.jpg" width="350px">
+  <img src="https://user-images.githubusercontent.com/74715917/284740018-918bcf55-87ed-4325-b384-f757f0349d34.jpg" width="350px">
 </p>
 
 # Level Up Your UI, Enjoyable & Simple
@@ -10,7 +10,7 @@
 
   
 
-# ![](https://t9009185363.p.clickup-attachments.com/t9009185363/801dc212-1ec0-4443-9798-c91cbe3fe5a6/icons8-star.gif) ✨ Give a star for the Repo ✨
+# ![](https://user-images.githubusercontent.com/74715917/284740021-7f34dfc1-72ef-4639-8079-fc8612254afb.gif) ✨ Give a star for the Repo ✨
 
 #   
 
@@ -173,15 +173,15 @@ class MyApp extends StatelessWidget {
 
 #### Desktop
 
-![](https://t9009185363.p.clickup-attachments.com/t9009185363/51c1b440-ee16-4298-9b5a-5e04028b1ffe/3.PNG)
+![](https://user-images.githubusercontent.com/74715917/284739887-daf52730-bed4-4783-ad2c-327163534b58.png)
 
 #### Tablet
 
-![](https://t9009185363.p.clickup-attachments.com/t9009185363/f48c4ed1-01b2-41bc-a6fe-7289a19ffd24/2.PNG)
+![](https://user-images.githubusercontent.com/74715917/284739894-556301bc-9db2-437b-a339-4a2aa4f9617e.png)
 
 ### Mobile
 
-![](https://t9009185363.p.clickup-attachments.com/t9009185363/323d570c-bd68-4dd1-b4b7-7e57200f8010/1.PNG)
+![](https://user-images.githubusercontent.com/74715917/284739900-9f3d85b1-6326-4211-96ef-bada89aa7654.png)
 
 ###   
 
@@ -227,15 +227,15 @@ class MyApp extends StatelessWidget {
 
 #### Desktop
 
-![](https://t9009185363.p.clickup-attachments.com/t9009185363/3f0c5c1c-f431-4fed-9b03-181bc2902b03/1.PNG)
+![](https://user-images.githubusercontent.com/74715917/284739968-6e8c7b61-10ab-44b7-941e-f41ecabce332.png)
 
 #### Tablet
 
-![](https://t9009185363.p.clickup-attachments.com/t9009185363/19c07937-1c3f-45c3-99fa-55a453e868de/2.PNG)
+![](https://user-images.githubusercontent.com/74715917/284739973-eb2c9aa5-62cf-4e05-8f98-f1d51a49a175.png)
 
 ### Mobile
 
-![](https://t9009185363.p.clickup-attachments.com/t9009185363/b4bba53b-d180-4293-baf7-d316c27e1475/3.PNG)
+![](https://user-images.githubusercontent.com/74715917/284739976-d1e426a2-bf20-4a06-b5ce-ad565c6e55d7.png)
 
 ###   
 
@@ -288,15 +288,15 @@ class MyApp extends StatelessWidget {
 
 #### Desktop
 
-![](https://t9009185363.p.clickup-attachments.com/t9009185363/89090a20-57c1-48ea-8909-c354c20db890/1.PNG)
+![](https://user-images.githubusercontent.com/74715917/284739988-a889cf6d-5fe0-45a8-962f-a567f630f029.png)
 
 #### Tablet
 
-![](https://t9009185363.p.clickup-attachments.com/t9009185363/acef422a-99dc-40a3-a384-1fe29ded0f1f/2.PNG)
+![](https://user-images.githubusercontent.com/74715917/284739991-a7b962c5-c468-4a3d-86ac-f09ffda110f4.png)
 
 ### Mobile
 
-![](https://t9009185363.p.clickup-attachments.com/t9009185363/11602d5b-eb8c-4c7a-a4fd-4b6557ac8e55/3.PNG)
+![](https://user-images.githubusercontent.com/74715917/284739994-90bfc9ba-90d0-490d-ae62-d786c703bad9.png)
 
 ###   
 
